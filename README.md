@@ -1,6 +1,8 @@
 # NFS BB BNV Compiler - Blender Addon
 NFS BB BNV Compiler is a Blender addon designed to prepare and compile vehicle geometry for Need for Speed BlackBox engine games.
 
+<img width="400" height="387" alt="Image" src="https://github.com/user-attachments/assets/09ad3928-74e5-41d2-9796-e2ee1b3620d5" />
+
 The addon automates multiple steps required in the BNV geometry pipeline, including object naming, material configuration, position marker creation, FBX export, and compilation using the BlackBox geometry compiler.
 
 This tool simplifies the process of preparing assets for games such as:
