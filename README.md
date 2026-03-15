@@ -77,16 +77,45 @@ Open:
 Material Setup
 ```
 For each material:
-1. Select a Shader
+1. Select a Shader or Enter Custom Shader
 2. Enter Diffuse texture name
 3. Enable Global Texture if needed
 4. Enable Normal Map if required
 
 Example:
 ```
+Material: BADGING
 Shader: DECAL
 Diffuse: BADGING
 Normal: BADGING
+```
+## Diffuse Texture Rules
+By default, the addon automatically prefixes textures with the car name.
+Example:
+```
+Diffuse input: BADGING
+Generated JSON: BMWM3GTR_BADGING
+```
+## Global Texture Option
+If Global Texture is enabled:
+```
+Diffuse input: BADGING
+Generated JSON: BADGING
+```
+This removes the CARNAME_ prefix and allows the game to use global textures already present in the game files.
+## Normal Map Rules
+When entering a Normal Map name, you must not include _N manually.
+Example input:
+```
+Normal: BADGING
+```
+The addon will automatically generate:
+```
+Generated JSON: BMWM3GTR_BADGING_N
+```
+If Global Texture is enabled for the normal map:
+```
+Generated JSON: BADGING_N
 ```
 
 
@@ -98,6 +127,8 @@ materials.json
 or
 CARNAME.json
 ```
+The addon will automatically apply the values to the matching materials in Blender.
+If a material exists in Blender but not in the JSON, it will remain editable so you can configure it manually and create a new Material.json
 
 
 ## Step 5 — Create Position Markers
