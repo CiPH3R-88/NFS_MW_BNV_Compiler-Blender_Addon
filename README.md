@@ -159,8 +159,7 @@ Once placed correctly:
 Convert Empty to Cubes
 ```
 Markers become small mesh cubes used by the game.
-
-Make sure to double the rotation for Exhaust direction.
+Make sure to double check marker rotation for Exhaust direction.
 
 
 ## Step 7 — Generate Materials JSON
