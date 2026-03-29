@@ -130,22 +130,27 @@ If a material exists in Blender but not in the JSON, it will remain editable so 
 
 ## Step 5 — Create Position Markers
 Open:
-```
-Position Marker Setup
-```
-1. Search and select a marker
-2. Set the count [for example: 3]
-3. Press:
-```
-Add Marker
-```
+1. Select a mesh object  
+2. Select a material to target faces  
+3. Enable: Highlight (Optional)
+4. Search and select a marker  
+5. Set:
+   - Count (example: 3)  
+   - Spacing  
+   - Size  
+   - Offset (X, Y, Z)  
+6. Enable: Parent to Object
+7. Press: Add Marker
 Example:
 ```
 #LEFT_BRAKELIGHT
 #LEFT_BRAKELIGHT.001
 #LEFT_BRAKELIGHT.002
 ```
-Markers are created as Empty objects.
+Markers are automatically:
+- Placed on selected material faces  
+- Evenly distributed and aligned  
+- Named using BNV format
 
 
 ## Step 6 — Convert Markers
@@ -154,6 +159,7 @@ Once placed correctly:
 Convert Empty to Cubes
 ```
 Markers become small mesh cubes used by the game.
+Make sure to double the rotation for Exhaust direction.
 
 
 ## Step 7 — Generate Materials JSON
